@@ -1,0 +1,283 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:#fff;
+    background-color: #333;
+
+}
+
+/* Header styles */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #333;;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 20px;
+    text-align: center;
+    background:#333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    background:#333;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid #4CAF50;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td {
+    background-color: #333;
+}
+
+.map {
+    margin-top: 20px;
+}
+
+/* Footer styling */
+footer {
+    background: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+
+    table {
+        font-size: 14px;
+        color: #fff;
+        background-color: #333;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li {
+        font-size: 14px;
+    }
+
+    .table {
+        overflow-x: scroll;
+        color: #fff;
+    }
+}
+
+.lol{
+    color: #fff;
+}
+.pp{
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-thickness: solid;
+    color: #4CAF50;
+    
+}
+th[colspan="2"] {
+    text-align: center;
+    font-size: 1.2em; /* Adjust font size if needed */
+    background-color: #4CAF50;
+    color:white;
+}
+.kol{
+    text-align: center;
+    font-size: 1.5em;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration-thickness: solid;
+    color: #4CAF50;
+}
+
+.mk{
+    display: block;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+.lil{
+    color: #4CAF50;
+}
+.ol{ text-align: center;
+    font-size: xx-large;
+    text-decoration-thickness: solid;
+    color: #4CAF50;
+}
+footer{
+    color: #333;
+}
+.container{
+    background-color: #333;
+    color: #fff;
+}
+#location{
+    background-color: #333;
+}
+#contact{
+    background-color: #333;
+}
+#about{
+    background-color: #333;
+}
+#feez{
+    background-color: #333;
+}
+#pw{
+    background-color: #333;
+}
+#qw{
+    background-color: #333;
+}
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero {
+    animation: slideIn 1s ease-out;
+}
+
+.hero img {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+section {
+    animation: fadeInUp 1s ease-out;
+}
+
+footer {
+    animation: fadeInUp 1s ease-out;
+}
